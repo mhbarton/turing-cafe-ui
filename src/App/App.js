@@ -17,7 +17,7 @@ class App extends Component {
     this.setState({ reservations: [...this.state.reservations, newReservation] });
   }
 
-  componentDidMount() {
+ componentDidMount() {
     fetchData().then(data => this.setState({ 
       reservations: data
     }))
